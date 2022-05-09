@@ -4,7 +4,7 @@ import './App.css';
 function App(props) {
   return (
     <React.Fragment>
-      <button onClick={props.handleClick}>{props.name}</button>
+      <button onClick={props.handleClick}>{props.children}</button>
     </React.Fragment>
   );
 }

@@ -29,7 +29,7 @@ const addNumber=()=>{
   }
 }
 
-const drop=()=>{
+const minus=()=>{
   number = number - 10;
   document.getElementById("text").innerHTML=number;
   if (number<0){
@@ -40,8 +40,8 @@ const drop=()=>{
 
 root.render(
   <React.Fragment>
-    <App name="+" handleClick={addNumber}/>
-    <App name="-" handleClick={drop}/>
+    <App handleClick={addNumber}>+</App>
+    <App handleClick={minus}>-</App>
     <div id="text">{number}</div>
     <Progress barName="bar1" Num="50"/>
   </React.Fragment>
